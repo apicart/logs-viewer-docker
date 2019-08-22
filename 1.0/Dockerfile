@@ -6,7 +6,7 @@ WORKDIR /var/www
 
 RUN rm -rf *
 
-RUN composer create-project apicart/logs-viewer:@dev .
+RUN composer create-project apicart/logs-viewer .
 
 CMD ["php", "-S", "[::]:80", "-t", "public"]
 
