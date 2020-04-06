@@ -22,7 +22,7 @@ services:
         container_name: "logs-viewer"
         working_dir: "/var/www"
         volumes:
-            - "./external-logs:/var/www/var/external-logs"
+            - "./external-logs:/var/www/var/external_logs"
         ports:
             - "80:80"
 
